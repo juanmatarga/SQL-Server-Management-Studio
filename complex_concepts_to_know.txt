@@ -1,0 +1,71 @@
+1. Advanced Joins
+Understanding various types of joins (INNER, LEFT, RIGHT, FULL OUTER, CROSS JOIN).
+Complex join conditions and combining multiple tables.
+Use cases: Combining data from multiple sources like sales, products, and customer tables.
+
+2. Window Functions
+ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE(): For ranking and pagination.
+LEAD(), LAG(): To compare current row values with previous or subsequent rows.
+SUM(), AVG(), COUNT() OVER(): To calculate running totals, moving averages, and partitioned aggregates without grouping.
+Use cases: Ranking products, calculating moving averages, cumulative sums.
+
+3. Common Table Expressions (CTEs)
+WITH clauses for creating temporary result sets that can be referenced in subsequent queries.
+Recursive CTEs for hierarchical data (e.g., organizational structure, category trees).
+Use cases: Simplifying complex queries, building hierarchical reports.
+
+4. Subqueries and Correlated Subqueries
+Non-correlated subqueries (in SELECT, FROM, or WHERE clauses) for filtering and creating derived columns.
+Correlated subqueries for row-by-row processing.
+Use cases: Filtering based on aggregates, retrieving data from related rows.
+
+5. Aggregation and Grouping
+GROUP BY with HAVING: Advanced filtering of aggregated data.
+Grouping by multiple columns and grouping sets (using ROLLUP and CUBE).
+Use cases: Reporting total sales by region, generating summary reports.
+
+6. Data Partitioning
+PARTITION BY: For breaking data into partitions to compute aggregates or rankings over subsets of the data.
+Windowing functions often rely on partitions (e.g., calculating running totals per department).
+Use cases: Analyzing data for different segments (e.g., sales per product category).
+
+7. Optimizing Queries
+Indexes: Understanding how indexes improve query performance.
+Query Execution Plans: Reading and interpreting execution plans to identify performance bottlenecks.
+Performance Tuning: Techniques like avoiding unnecessary SELECT *, proper indexing, and using joins efficiently.
+Use cases: Optimizing performance for large datasets.
+
+8. Handling Time Series Data
+Querying time-based data effectively using DATEPART(), DATEDIFF(), and date functions.
+Window functions for cumulative, rolling, or moving window analysis (e.g., 7-day averages).
+Use cases: Analyzing trends over time (e.g., revenue growth by month).
+
+9. Set Operations
+UNION, INTERSECT, EXCEPT for combining result sets.
+Use cases: Merging datasets from different sources or comparing datasets (e.g., customers who bought Product A but not Product B).
+
+10. Pivoting and Unpivoting Data
+PIVOT: Transforms rows into columns (e.g., converting sales data into a pivot table by month).
+UNPIVOT: Does the reverse, turning columns into rows.
+Use cases: Creating dynamic reports (e.g., monthly sales breakdowns).
+
+11. Stored Procedures and Functions
+Writing and optimizing stored procedures to automate complex reporting tasks.
+Understanding user-defined functions (UDFs) for reusable logic.
+Use cases: Automating recurring tasks (e.g., monthly reports), encapsulating business logic.
+
+12. Error Handling
+Implementing TRY...CATCH blocks for error handling within queries and procedures.
+Use cases: Ensuring robustness in automated scripts and procedures.
+
+13. Dynamic SQL
+Constructing SQL queries dynamically using EXECUTE statements and stored procedures.
+Use cases: Building flexible reporting queries that adapt to different user inputs (e.g., generating reports for various departments).
+
+14. Data Import/Export
+Using SQL to import/export data from/to different file formats (e.g., CSV, Excel) and connecting SQL with external tools.
+Use cases: Preparing datasets for analysis in external tools like Excel or Power BI.
+
+15. Advanced Data Types
+Understanding and working with advanced SQL Server data types like JSON, XML, and Geospatial data.
+Use cases: Parsing JSON data from APIs or handling geographical data for location-based analysis.
